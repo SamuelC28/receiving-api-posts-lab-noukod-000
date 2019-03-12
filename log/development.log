@@ -1811,3 +1811,5 @@ Started GET "/products/new" for 190.102.85.219 at 2019-03-12 21:47:16 +0000
 Cannot render console from 190.102.85.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (436.0ms)
+Completed 200 OK in 791ms (Views: 764.4ms | ActiveRecord: 0.6ms)
