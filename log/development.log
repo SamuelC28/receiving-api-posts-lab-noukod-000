@@ -1813,3 +1813,14 @@ Cannot render console from 190.102.85.219! Allowed networks: 127.0.0.1, ::1, 127
 Processing by ProductsController#new as HTML
   Rendered products/new.html.erb within layouts/application (436.0ms)
 Completed 200 OK in 791ms (Views: 764.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/products" for 190.102.85.219 at 2019-03-12 21:47:30 +0000
+Cannot render console from 190.102.85.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PDj2F7zehkJeMbNh+d2MDKLD6yc8HffpOItQPWKBnERqofZjjX0EB+Bh2CcxMi7NcBrASGpvBErvC4WCq+OkOw==", "product"=>{"name"=>"234567trytytyth", "price"=>"54", "description"=>"sdgfhjkgffdgfnbfdf", "inventory"=>"dfgfgf"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "products" ("name", "description", "inventory", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "234567trytytyth"], ["description", "sdgfhjkgffdgfnbfdf"], ["inventory", 0], ["price", 54], ["created_at", "2019-03-12 21:47:30.677039"], ["updated_at", "2019-03-12 21:47:30.677039"]]
+  [1m[35m (3.7ms)[0m  commit transaction
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Class (0.18ms)
+Completed 201 Created in 90ms (Views: 26.5ms | ActiveRecord: 4.3ms)
